@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertical-timeline-custom-line{
+  --line-color: black;
+}
+.vertical-timeline-element-title{
+  font-size: 1.5rem!important;
+  color: black!important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+}
+.h1 {
+  font-family: 'Newsreader', serif;
+  font-size: 2rem;
+}
+h2 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.5rem;
+}
+.h2 {
+  font-family: 'Newsreader', serif;
+  font-size: 1.5rem;
+}
+.orange-circle{
+  z-index: -1;
+  height: 400px;
+  width: 400px;
+  background: rgb(243,187,24);
+background: radial-gradient(circle, rgba(243,187,24,1) 0%, rgba(255,255,255,1) 100%);
+}
+h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1rem;
+}
+.h3 {
+  font-family: 'Newsreader', serif;
+  font-size: 1rem;
+}
+/* font-family: 'Newsreader', serif;
+font-family: 'Poppins', sans-serif; */
+
+body {
+  /*background-color: #131313;*/
+  overflow-x: hidden;
+  /* cursor: none; */
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: black;
+}
+::selection {
+  background-color: greenyellow; /* Background color of the selected text */
+  color: black;
+}
+button {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  /* font-weight: bold; */
+}
+hr {
+  color: #131313;
+}
+
+p {
+  font-family: poppins, "sans-serif";
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e7e5e4 #0c0a09;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e7e5e4;
+  border-radius: 15px;
+  border: 5px none #ffffff;
+}
