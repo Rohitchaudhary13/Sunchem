@@ -12,7 +12,7 @@ const Cards = () => {
                 return(
                     <>
                         <div key={index} className='rounded-2xl'>
-                            <video prefix='auto' autoplay loop muted playsinline controls>
+                            <video prefix='auto' autoPlay loop muted playsInline controls>
                                 <source src={item.source} type="video/mp4" />
                             </video>
                             <h2>{item.name}</h2>
