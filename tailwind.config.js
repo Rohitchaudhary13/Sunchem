@@ -33,6 +33,7 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         grotesk: ['Clash Grotesk', 'sans-serif'],
         outfit: ['Outfit', 'Arial', 'sans-serif'],
+        newsreader: ['Newsreader', 'serif'],
         // ...other font variables
       },
       fontSize: {

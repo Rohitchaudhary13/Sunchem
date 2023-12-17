@@ -12,7 +12,7 @@ const About = () => {
     <div>
       <div className='relative h-screen'>
       <Navbar />
-        <img src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/essential_oil.jpg?updatedAt=1702696128969' className='w-full h-full absolute top-0 -z-10 object-cover' alt='...' />
+        <img src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/nick-night-52F2gX0COs4-unsplash.jpg?updatedAt=1702805986125' className='w-full h-full absolute top-0 -z-10 object-cover' alt='...' />
         <h2 className='text-6xl mt-48 text-secondary w-11/12 mx-auto'><span className='italic'>Beauty</span> from <br /> skin to <span className='italic'>soul</span></h2>
       </div>
       <div className='w-11/12 mx-auto relative mt-16'>

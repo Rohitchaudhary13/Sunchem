@@ -145,3 +145,77 @@ export const promise = [
         description: 'We constantly strive to redefine the standard of excellence in our production and operations through our improvement process while addressing immediate problems to improve our overall performance.',
     },
 ]
+
+
+export const products = [
+    {
+        id: 1,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-polina-kovaleva-5927890.jpg?updatedAt=1702808718868',
+        category: 'Skincare',
+    },
+    {
+        id: 2,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/roberto-nickson-YCW4BEhKluw-unsplash.jpg?updatedAt=1702808722043',
+        category: 'Hair Care',
+    },
+    {
+        id: 3,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-andrea-piacquadio-774866.jpg?updatedAt=1702808721916',
+        category: 'Clinical Facials',
+    },
+    {
+        id: 4,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-anna-shvets-5069406.jpg?updatedAt=1702808722051',
+        category: 'Depilatory',
+    },
+    {
+        id: 5,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/anelya-okapova-V69kmOyZ3SU-unsplash.jpg?updatedAt=1702808722039',
+        category: 'Hand & Feet Care',
+    },
+    {
+        id: 6,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-monstera-production-6781237.jpg?updatedAt=1702808721974',
+        category: 'Bath & Body Care',
+    },
+    {
+        id: 7,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-cottonbro-studio-3998407.jpg?updatedAt=1702808718873',
+        category: `Men's Grooming`,
+    },
+    {
+        id: 8,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-helena-lopes-7932589.jpg?updatedAt=1702808718859',
+        category: 'Sun Care',
+    },
+    {
+        id: 9,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-koolshooters-7143201.jpg?updatedAt=1702808718847',
+        category: 'Face Care',
+    },
+    {
+        id: 10,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-anna-shvets-3987142.jpg?updatedAt=1702808718890',
+        category: 'Hygiene',
+    },
+    {
+        id: 11,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-karolina-grabowska-4210342.jpg?updatedAt=1702808718921',
+        category: 'Home Care',
+    },
+    {
+        id: 12,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-sarah-chai-7282272.jpg?updatedAt=1702808718838',
+        category: 'Baby Care',
+    },
+    {
+        id: 13,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-sora-shimazaki-5938647.jpg?updatedAt=1702808718864',
+        category: 'Intimate Hygiene',
+    },
+    {
+        id: 14,
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-monstera-production-6620948.jpg?updatedAt=1702808718851',
+        category: 'Personal Care',
+    },
+]

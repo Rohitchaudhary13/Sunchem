@@ -55,33 +55,33 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              <li className="px-4">
+              {/* <li className="px-4">
                 <Link
                   to="services"
                   class="block py-2 px-3 rounded  md:border-0"
                 >
                   Services
                 </Link>
-              </li>
+              </li> */}
               <li className="px-4">
                 <Link
-                  to="#"
+                  to="/product-category"
                   class="block py-2 px-3 rounded  md:border-0"
                 >
                   Products
                 </Link>
               </li>
-              <li className="px-4">
+              {/* <li className="px-4">
                 <Link
                   to="#"
                   class="block py-2 px-3 rounded  md:border-0"
                 >
                   Clients
                 </Link>
-              </li>
+              </li> */}
               <li className="px-4 bg-primary border-solid transition-all duration-300 ease-in-out rounded-full border-dark hover:bg-secondary hover:text-primary">
                 <Link
-                  to="#"
+                  to="/contact"
                   class="block py-2 px-3 rounded  md:border-0"
                 >
                   Contact Us
