@@ -30,7 +30,7 @@ const Categories = () => {
                 
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Root-Concealer-Spray.mp4?updatedAt=1702455762827' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -41,7 +41,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Hair-Removal-Spray1.mp4?updatedAt=1702455759954' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -52,7 +52,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/hair_color?updatedAt=1702527912240' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -63,7 +63,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Hvp.mp4?updatedAt=1702455759835' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -74,7 +74,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Hair-Straightening.mp4?updatedAt=1702455759890' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -85,7 +85,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Dry-Spa.mp4?updatedAt=1702455758847' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -96,7 +96,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Oxygen-Bleach.mp4?updatedAt=1702455759024' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -107,7 +107,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Epilatory-Wax.mp4?updatedAt=1702455759639' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -118,7 +118,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Hair-Removal-Cream.mp4?updatedAt=1702455758901' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -129,7 +129,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Home-Care-Video.mp4?updatedAt=1702455760090' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -140,7 +140,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Dish-Washer.mp4?updatedAt=1702455759140' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -151,7 +151,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Pet-Care.mp4?updatedAt=1702455763043' type="video/mp4" />
         </video>
         <div className='p-4'>
@@ -162,7 +162,7 @@ const Categories = () => {
       </SwiperSlide>
       <SwiperSlide>
       <div className='rounded-2xl bg-[#fff]'>
-        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoplay loop muted playsinline controls>
+        <video className='h-60 w-96 object-cover rounded-t-2xl' prefix='auto' autoPlay loop muted playsInline controls>
             <source src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/Pedicure-Kit.mp4?updatedAt=1702455762226' type="video/mp4" />
         </video>
         <div className='p-4'>
