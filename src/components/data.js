@@ -86,21 +86,21 @@ export const clients = [
 export const feedback = [
     {
         id: 1,
-        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ezgif.com-webp-to-png.png?updatedAt=1702470071580',
-        feedback: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nobis fugit accusantium, sapiente  commodi id.',
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/idJduluxkG%20(1).png?updatedAt=1702517787733',
+        feedback: 'An invaluable partner from inception, their research prowess helped us actualize our vision for natural, novel formulations that resonate with safety and efficacy for families.',
         date: '14 December 2023',
     },
     {
         id: 2,
-        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ezgif.com-webp-to-png.png?updatedAt=1702470071580',
-        feedback: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nobis fugit accusantium, sapiente  commodi id.',
-        date: '14 December 2023',
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/dabur-900x0-removebg-preview.png?updatedAt=1702551339719',
+        feedback: `SunChem's comprehensive competence in research, business, and manufacturing enables them to completely understand and successfully meet the formulation needs of brands.`,
+        date: '24 August 2015',
     },
     {
         id: 3,
-        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ezgif.com-webp-to-png.png?updatedAt=1702470071580',
-        feedback: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium nobis fugit accusantium, sapiente  commodi id.',
-        date: '14 December 2023',
+        logo: 'https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/bombae-coupon-promo-code-removebg-preview.png?updatedAt=1702556653846',
+        feedback: 'Their stellar research and sage advising on strategy made our brand vision a reality with custom-crafted formulations. Superb partners.',
+        date: '05 March 2013',
     },
     // {
     //     id: 4,

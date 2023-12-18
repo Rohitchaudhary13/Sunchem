@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -9,8 +9,12 @@ import HomeBanner from './components/HomeBanner'
 import Howwework from './components/Howwework'
 import Offices from './components/Offices'
 import Footer from './components/Footer'
+import {Scrollbar} from 'smooth-scrollbar-react';
+import { AnimatePresence, useMotionValue, useSpring } from 'framer-motion'
+import { ScrollRestoration } from 'react-router-dom'
 
 function App() {
+  
 
   return (
     <>

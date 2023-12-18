@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-transparent w-11/12 mx-auto">
-        <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav className=" bg-white absolute w-full px-4">
+        <div className="flex flex-wrap items-center justify-between mx-auto">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL.png?updatedAt=1702463627015" width={160} alt="" />
+            <img src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL.png?updatedAt=1702463627015" className="p-2" width={160} alt="" />
           </Link>
           <button
             data-collapse-toggle="navbar-default"
@@ -49,7 +49,7 @@ const Navbar = () => {
               </li>
               <li className="px-4">
                 <Link
-                  to="about"
+                  to="/about"
                   className="block py-2 px-3 rounded  md:border-0"
                 >
                   About
