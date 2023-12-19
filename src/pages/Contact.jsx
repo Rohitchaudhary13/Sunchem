@@ -80,20 +80,28 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { DarkButton } from '../components/Button';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
     <div>
       <div className='relative h-screen'>
         <Navbar />
-        <img
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
+          exit={{ opacity: 0 }}
           src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg?updatedAt=1702899341080'
           className='w-full h-full absolute top-0 -z-10 object-cover'
           alt='...'
         />
-        <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8'>
+        <motion.h2
+          animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
+          transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
+          className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8'>
           <span className='italic'>Feel free</span> to <br /> connect with <span className='italic'>us</span>
-        </h2>
+        </motion.h2>
       </div>
       <div className='w-11/12 mx-auto py-8 md:py-16 relative pb-16'>
         <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl'>
@@ -101,12 +109,12 @@ const Contact = () => {
         </h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div className='w-full'>
-            <form className='w-full mx-auto'>
               <p className='w-full pb-8'>
                 You will get a response within 24 hours. We will explain in
                 details how we can help you fuel and grow your brand within the
                 stated budget.
               </p>
+            <form className='w-11/12'>
               <div className='relative z-0 w-full mb-5 group'>
                 <input
                   type='email'
@@ -229,10 +237,10 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className='w-full'>
+          <div className='w-full overflow-hidden rounded-2xl'>
             <img
-              src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-alex-andrews-821754.jpg?updatedAt=1702810712100'
-              className='w-full object-cover rounded-xl'
+              src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pavan-trikutam-71CjSSB83Wo-unsplash.jpg?updatedAt=1702810712269'
+              className='w-full h-full object-cover rounded-2xl transition-all duration-200 ease-in-out hover:scale-110'
               alt=''
             />
           </div>

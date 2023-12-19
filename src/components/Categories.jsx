@@ -207,6 +207,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css';
 import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr';
 import { categories } from './data';
+import { motion } from 'framer-motion';
+
 
 const Categories = () => {
   const swiper = useSwiper();
@@ -214,8 +216,8 @@ const Categories = () => {
 
   return (
     <div className='bg-secondary min-h-screen'>
-      <div className='pt-16 px-4'>
-        <h2 className='text-3xl md:text-5xl lg:text-6xl text-center'>
+      <div className='py-16 px-4'>
+        <h2 className='text-3xl md:text-5xl lg:text-5xl text-center'>
           Popular
         </h2>
         <p className='text-center'>
@@ -244,15 +246,20 @@ const Categories = () => {
           >
             {categories.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className='rounded-2xl bg-[#fff]'>
+                <motion.div
+                  whileHover={{
+                    scale: 1.1,
+                    transition:{ duration: 0.5, ease: 'anticipate' }
+                  }}
+                  whileTap={{ scale: 0.9 }}
+                  className='rounded-2xl bg-[#fff]'>
                   <video
-                    className='h-60 md:h-80 lg:h-96 w-full object-cover rounded-t-2xl'
+                    className='h-60 md:h-80 lg:h-60 w-full object-cover rounded-t-2xl'
                     prefix='auto'
                     autoPlay
                     loop
                     muted
                     playsInline
-                    controls
                   >
                     <source src={item.source} type="video/mp4" />
                   </video>
@@ -260,7 +267,7 @@ const Categories = () => {
                     <h2>{item.name}</h2>
                     <p>{item.details}</p>
                   </div>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>

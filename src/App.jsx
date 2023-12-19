@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import {Scrollbar} from 'smooth-scrollbar-react';
 import { AnimatePresence, useMotionValue, useSpring } from 'framer-motion'
 import { ScrollRestoration } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 function App() {
   
@@ -23,7 +24,10 @@ function App() {
     <Categories />
     <Whoweare />
     <Feedback start={`What our `} end={`say about us`} italic={`clients`} />
+    <ParallaxProvider
+      >
     <HomeBanner />
+    </ParallaxProvider>
     <Howwework />
     <Offices />
     <Footer />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { categories, clients } from './data';
 import Marquee from './MyMarquee';
+import { motion } from 'framer-motion';
 
 const Whoweare = () => {
   return (
@@ -17,7 +18,12 @@ const Whoweare = () => {
                 years of experience in creating one of the most advanced
                 cosmetic formulations.
               </p>
-              <img
+              <motion.img
+                whileHover={{
+                  scale: 1.05,
+                  transition:{ duration: 0.5, ease: 'anticipate' }
+                }}
+                whileTap={{ scale: 0.9 }}
                 className='rounded-xl w-full md:w-auto'
                 src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-shvets-production-9774902.jpg?updatedAt=1702470071637'
                 alt=''

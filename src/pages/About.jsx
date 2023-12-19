@@ -117,21 +117,29 @@ import { promise } from "../components/data";
 import { PiHandshake } from "react-icons/pi";
 import { DarkButton, LightButton } from "../components/Button";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div>
       <div className="relative h-screen">
         <Navbar />
-        <img
-          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/nick-night-52F2gX0COs4-unsplash.jpg?updatedAt=1702805986125"
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
+          exit={{ opacity: 0 }}
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/scott-walsh-V9keLsAtxyA-unsplash.jpg?updatedAt=1702951826827"
           className="w-full h-full absolute top-0 -z-10 object-cover"
           alt="..."
         />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8">
+        <motion.h2
+         animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
+         transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
+         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-secondary w-11/12 mx-auto top-1/2 absolute left-8 mt-8">
           <span className="italic">Beauty</span> from <br /> skin to{" "}
           <span className="italic">soul</span>
-        </h2>
+        </motion.h2>
       </div>
       <div className="w-11/12 mx-auto relative mt-8 md:mt-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
@@ -175,9 +183,14 @@ const About = () => {
         />
         <div className="flex flex-col md:flex-row gap-8 w-11/12 mx-auto my-8 md:my-16">
           <div className="w-full md:w-2/3">
-            <img
+            <motion.img
+              whileHover={{
+                scale: 1.05,
+                transition:{ duration: 0.5, ease: 'anticipate' }
+              }}
+              whileTap={{ scale: 0.9 }}
               src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/sample_products.jpg?updatedAt=1702699682206"
-              className="rounded-2xl h-[50vh] md:h-[75vh] w-full object-cover"
+              className="rounded-2xl h-[50vh] md:h-[80vh] w-full object-cover"
               alt=""
             />
           </div>
@@ -189,23 +202,24 @@ const About = () => {
               and distribution as well as worldwide customer support. We ensure
               best service with every product we have manufactured.
             </p>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex justify-evenly p-4 flex-col gap-4">
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              <div
+                className="flex hover:bg-secondary rounded-2xl cursor-pointer justify-evenly p-4 flex-col gap-4">
                 <h2 className="font-semibold font-poppins text-4xl">166+</h2>
                 <p>Our current team count, up from 3 in 2016</p>
                 <hr />
               </div>
-              <div className="flex justify-evenly p-4 flex-col gap-4">
+              <div className="flex justify-evenly p-4 flex-col hover:bg-secondary rounded-2xl gap-4 cursor-pointer">
                 <h2 className="font-semibold font-poppins text-4xl">166+</h2>
                 <p>Our current team count, up from 3 in 2016</p>
                 <hr />
               </div>
-              <div className="flex justify-evenly p-4 flex-col gap-4">
+              <div className="flex justify-evenly p-4 flex-col gap-4 hover:bg-secondary rounded-2xl cursor-pointer">
                 <h2 className="font-semibold font-poppins text-4xl">166+</h2>
                 <p>Our current team count, up from 3 in 2016</p>
                 <hr />
               </div>
-              <div className="flex justify-evenly p-4 flex-col gap-4">
+              <div className="flex justify-evenly p-4 flex-col gap-4 hover:bg-secondary rounded-2xl cursor-pointer">
                 <h2 className="font-semibold font-poppins text-4xl">166+</h2>
                 <p>Our current team count, up from 3 in 2016</p>
                 <hr />
@@ -223,21 +237,26 @@ const About = () => {
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
           {promise.map((item, index) => (
-            <div
+            <motion.div
+            whileHover={{
+              scale: 1.07,
+              transition:{ duration: 0.5, ease: 'easeInOut' }
+            }}
+            whileTap={{ scale: 0.9 }}
               key={index}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 rounded-xl text-center h-auto bg-secondary p-4 bg-opacity-20  backdrop-blur-md bg-clip-padding backdrop-filter border border-opacity-30 border-white shadow-md mb-8 md:mb-0"
+              className="cursor-pointer hover:bg-primary w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 rounded-xl text-center h-auto bg-secondary p-4 bg-opacity-20  backdrop-blur-md bg-clip-padding backdrop-filter border border-opacity-30 border-white shadow-md mb-8 md:mb-0"
             >
               <div className="flex justify-center">
                 <PiHandshake className="my-4 text-center" size={45} />
               </div>
               <h2 className="py-2">{item.title}</h2>
               <p className="py-2">{item.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
         <img
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ellipse.png?updatedAt=1702548819472"
-          className="absolute top-1/3 left-1/3 -z-10"
+          className="absolute top-1/3 right-1/3 -z-10"
           alt="..."
         />
       </div>
@@ -259,10 +278,15 @@ const About = () => {
               <LightButton name={`Get in Touch`} />
             </div>
           </div>
-          <div className="w-full md:w-1/2 h-[50vh] lg:h-[70vh]">
+          <div className="w-full md:w-1/2 h-[50vh] lg:h-[70vh] overflow-hidden rounded-3xl">
             <img
+              // whileHover={{
+              //   scale: 1.05,
+              //   transition:{ duration: 0.5, ease: 'easeInOut' }
+              // }}
+              // whileTap={{ scale: 0.9 }}
               src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-fox-1595385.jpg?updatedAt=1702470066225"
-              className="rounded-3xl w-full h-full object-cover"
+              className="w-full h-full object-cover transition-all duration-200 ease-in-out hover:scale-125"
               alt="..."
             />
           </div>

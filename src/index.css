@@ -56,7 +56,7 @@ body {
   -webkit-tap-highlight-color: black;
 }
 ::selection {
-  background-color: greenyellow; /* Background color of the selected text */
+  background-color: rgb(243,187,24); /* Background color of the selected text */
   color: black;
 }
 button {

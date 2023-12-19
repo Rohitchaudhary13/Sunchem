@@ -211,14 +211,16 @@ import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 import "swiper/css";
 import { IoMdArrowForward } from "react-icons/io";
 import { feedback } from "./data";
+import { motion } from "framer-motion";
+
 
 const Feedback = (props) => {
   const swiper = useSwiper();
   const swiperRef = useRef();
 
   return (
-    <div className="w-11/12 mx-auto my-8">
-      <div className="my-8">
+    <div className="w-11/12 mx-auto my-16">
+      <div className="my-16">
         <h2 className="text-3xl md:text-5xl text-center">
           {props.start} <span className="italic">{props.italic} </span>
           {props.end}
@@ -245,7 +247,13 @@ const Feedback = (props) => {
       >
         {feedback.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="flex justify-evenly flex-col rounded-2xl w-96 md:w-80 lg:w-96 h-80 border-2 bg-[#fff] border-solid border-gray-200 p-4">
+            <motion.div
+              whileHover={{
+                scale: 1.05,
+                transition:{ duration: 0.5, ease: 'anticipate' }
+              }}
+              whileTap={{ scale: 0.9 }}
+              className="flex justify-evenly flex-col rounded-2xl w-96 md:w-80 lg:w-96 h-80 border-2 bg-[#fff] border-solid border-gray-200 p-4">
               <div className="flex justify-between w-full">
                 <img
                   className="w-56 md:w-36 object-contain"
@@ -257,7 +265,7 @@ const Feedback = (props) => {
               <hr className="bg-dark mt-4" />
               <p>{item.feedback}</p>
               <p className="opacity-50">{item.date}</p>
-            </div>
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

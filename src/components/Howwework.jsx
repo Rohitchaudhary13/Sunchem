@@ -128,7 +128,7 @@ const Howwework = () => {
         <div>
           <VerticalTimeline className="vertical-timeline-custom-line">
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work cursor-pointer"
               icon={<PiStrategyBold />}
               contentStyle={{
                 background: "#f6f6f6",
@@ -153,7 +153,7 @@ const Howwework = () => {
                 background: "#f6f6f6",
                 borderRadius: "15px",
               }}
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work cursor-pointer"
               icon={<LuPackageOpen />}
               iconStyle={{
                 background: "#f3bb18",
@@ -172,7 +172,7 @@ const Howwework = () => {
                 background: "#f6f6f6",
                 borderRadius: "15px",
               }}
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work cursor-pointer"
               icon={<FaTrademark />}
               iconStyle={{
                 background: "#f3bb18",
@@ -191,7 +191,7 @@ const Howwework = () => {
                 background: "#f6f6f6",
                 borderRadius: "15px",
               }}
-              className="vertical-timeline-element--work"
+              className="vertical-timeline-element--work cursor-pointer"
               icon={<MdOutlineCoffeeMaker />}
               iconStyle={{
                 background: "#f3bb18",
@@ -210,7 +210,7 @@ const Howwework = () => {
                 background: "#f6f6f6",
                 borderRadius: "15px",
               }}
-              className="vertical-timeline-element--education"
+              className="vertical-timeline-element--education cursor-pointer"
               icon={<TbReportSearch />}
               iconStyle={{
                 background: "#f3bb18",
@@ -229,7 +229,7 @@ const Howwework = () => {
                 background: "#f6f6f6",
                 borderRadius: "15px",
               }}
-              className="vertical-timeline-element--education"
+              className="vertical-timeline-element--education cursor-pointer"
               icon={<TbTruckDelivery />}
               iconStyle={{
                 background: "#f3bb18",
