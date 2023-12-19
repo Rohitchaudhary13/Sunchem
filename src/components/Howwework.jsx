@@ -145,7 +145,7 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Understanding & Strategy
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>Delving deep into your product needs and market trends, our strategic approach aligns with your vision, tailoring solutions to meet business goals.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               contentStyle={{
@@ -164,7 +164,7 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Packaging, Costing & Approval
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>With meticulous attention to design, cost, and approvals, our transparent costing process ensures financial clarity, enhancing product appeal through innovative packaging solutions.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               contentStyle={{
@@ -183,7 +183,7 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Trademark & Branding
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>Elevate your brand identity with our services, guiding you through the legal intricacies to create a unique brand image resonating with your target audience.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               contentStyle={{
@@ -202,7 +202,7 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Production & Research
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>Backed by cutting-edge research and state-of-the-art facilities, we ensure the highest quality standards, employing advanced technologies to exceed industry benchmarks.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               contentStyle={{
@@ -221,7 +221,7 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Final Report & Inspection
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>Prioritizing quality, our thorough inspections and final report guarantee a flawless product meeting stringent quality criteria at every stage.</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               contentStyle={{
@@ -240,12 +240,12 @@ const Howwework = () => {
               <h2 className="vertical-timeline-element-title">
                 Double Checking & Dispatch
               </h2>
-              <p>We’ll understand your requirements and prepare a product development strategy</p>
+              <p>Our commitment to perfection extends to the double-checking phase, ensuring your product reaches you in optimal condition, ready to leave a lasting impression in the market.</p>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
+            {/* <VerticalTimelineElement
               icon={<MdCelebration />}
               iconStyle={{ background: "#f3bb18", color: "#000" }}
-            />
+            /> */}
           </VerticalTimeline>
         </div>
       </div>

@@ -123,26 +123,31 @@ export const promise = [
         id: 1,
         title: 'Partnership',
         description: 'Throughout the years, we have learned the importance of partnerships. We believe that by working together, we are able to deliver the best value for our customers and create an impact on their long-term success.',
+        icon: 'PiHandshake'
     },
     {
         id: 2,
         title: 'Innovation',
         description: 'We strive to create innovative products that shape and set trends within the beauty industry by continuously searching for novel ingredients and leveraging technology to exceed your expectations.',
+        icon: 'FaRegLightbulb'
     },
     {
         id: 3,
         title: 'Creativity',
         description: 'We believe that creativity is what fuels vision and innovation. Cultivating a culture of creativity gives us the opportunity to look beyond our capabilities and maximize our potential for growth and success. ',
+        icon: 'FaPencilRuler'
     },
     {
         id: 4,
         title: 'Responsibility',
         description: 'We implement strict standards in ensuring that our partners are getting quality effective products while proactively implementing newer technology to keep upgrading ourselves.',
+        icon: 'VscWorkspaceTrusted'
     },
     {
         id: 5,
         title: 'Efficiency',
         description: 'We constantly strive to redefine the standard of excellence in our production and operations through our improvement process while addressing immediate problems to improve our overall performance.',
+        icon: 'IoIosFlash'
     },
 ]
 

@@ -114,12 +114,23 @@ import MyMarquee from "../components/MyMarquee";
 import Feedback from "../components/Feedback";
 import FeedbackCards from "../components/FeedbackCards";
 import { promise } from "../components/data";
-import { PiHandshake } from "react-icons/pi";
 import { DarkButton, LightButton } from "../components/Button";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import { PiHandshake } from "react-icons/pi";
+import { FaRegLightbulb, FaPencilRuler } from "react-icons/fa";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { IoIosFlash } from "react-icons/io";
 
 const About = () => {
+  const iconComponents = {
+    PiHandshake,
+    FaRegLightbulb,
+    FaPencilRuler,
+    VscWorkspaceTrusted,
+    IoIosFlash,
+  };
+
   return (
     <div>
       <div className="relative h-screen">
@@ -129,14 +140,15 @@ const About = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
           exit={{ opacity: 0 }}
-          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/scott-walsh-V9keLsAtxyA-unsplash.jpg?updatedAt=1702951826827"
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pmv-chamara-ILhf4VsPn_w-unsplash(1).jpg?updatedAt=1702981478509"
           className="w-full h-full absolute top-0 -z-10 object-cover"
           alt="..."
         />
         <motion.h2
-         animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
-         transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
-         className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-secondary w-11/12 mx-auto top-1/2 absolute left-8 mt-8">
+          animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
+          transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-secondary w-11/12 mx-auto top-1/2 absolute left-8 mt-8"
+        >
           <span className="italic">Beauty</span> from <br /> skin to{" "}
           <span className="italic">soul</span>
         </motion.h2>
@@ -186,7 +198,7 @@ const About = () => {
             <motion.img
               whileHover={{
                 scale: 1.05,
-                transition:{ duration: 0.5, ease: 'anticipate' }
+                transition: { duration: 0.5, ease: "anticipate" },
               }}
               whileTap={{ scale: 0.9 }}
               src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/sample_products.jpg?updatedAt=1702699682206"
@@ -203,25 +215,24 @@ const About = () => {
               best service with every product we have manufactured.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <div
-                className="flex hover:bg-secondary rounded-2xl cursor-pointer justify-evenly p-4 flex-col gap-4">
-                <h2 className="font-semibold font-poppins text-4xl">166+</h2>
-                <p>Our current team count, up from 3 in 2016</p>
+              <div className="flex hover:bg-secondary rounded-2xl cursor-pointer justify-evenly p-4 flex-col gap-4">
+                <h2 className="font-semibold font-poppins text-4xl">10+</h2>
+                <p>Factories situated all over India.</p>
                 <hr />
               </div>
               <div className="flex justify-evenly p-4 flex-col hover:bg-secondary rounded-2xl gap-4 cursor-pointer">
-                <h2 className="font-semibold font-poppins text-4xl">166+</h2>
-                <p>Our current team count, up from 3 in 2016</p>
+                <h2 className="font-semibold font-poppins text-4xl">25+</h2>
+                <p>Years of exp in creating best formulations.</p>
                 <hr />
               </div>
               <div className="flex justify-evenly p-4 flex-col gap-4 hover:bg-secondary rounded-2xl cursor-pointer">
-                <h2 className="font-semibold font-poppins text-4xl">166+</h2>
-                <p>Our current team count, up from 3 in 2016</p>
+                <h2 className="font-semibold font-poppins text-4xl">20+</h2>
+                <p>Product Categories manufactured</p>
                 <hr />
               </div>
               <div className="flex justify-evenly p-4 flex-col gap-4 hover:bg-secondary rounded-2xl cursor-pointer">
-                <h2 className="font-semibold font-poppins text-4xl">166+</h2>
-                <p>Our current team count, up from 3 in 2016</p>
+                <h2 className="font-semibold font-poppins text-4xl">15+</h2>
+                <p>Home brand manufactures</p>
                 <hr />
               </div>
             </div>
@@ -238,16 +249,19 @@ const About = () => {
         <div className="flex flex-wrap justify-center gap-8">
           {promise.map((item, index) => (
             <motion.div
-            whileHover={{
-              scale: 1.07,
-              transition:{ duration: 0.5, ease: 'easeInOut' }
-            }}
-            whileTap={{ scale: 0.9 }}
+              whileHover={{
+                scale: 1.07,
+                transition: { duration: 0.5, ease: "easeInOut" },
+              }}
+              whileTap={{ scale: 0.9 }}
               key={index}
               className="cursor-pointer hover:bg-primary w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 rounded-xl text-center h-auto bg-secondary p-4 bg-opacity-20  backdrop-blur-md bg-clip-padding backdrop-filter border border-opacity-30 border-white shadow-md mb-8 md:mb-0"
             >
               <div className="flex justify-center">
-                <PiHandshake className="my-4 text-center" size={45} />
+                {React.createElement(iconComponents[item.icon], {
+                  className: "my-4 text-center",
+                  size: 45,
+                })}
               </div>
               <h2 className="py-2">{item.title}</h2>
               <p className="py-2">{item.description}</p>
@@ -270,7 +284,16 @@ const About = () => {
               <span className="italic">Connect</span> with us
             </h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil a assumenda dolores aliquid quos, nam illo ratione ullam. Fugiat, quasi?
+              Welcome to SunChem India, where innovation meets quality in the
+              realm of skincare and homecare products. Connect with us to
+              explore the latest advancements, industry insights, and
+              collaborative opportunities. 
+              <br />
+              Whether you're a customer, partner, or industry
+              enthusiast, we invite you to be part of our journey. 
+              Let's collaborate and bring your brand's vision to life. Transform ideas
+              into quality products with SunChem India – your trusted partner
+              for over 25 years in cosmetic formulations.
             </p>
             <p className="font-semibold">Let’s start your brand’s journey!</p>
             <div className="flex gap-4">
