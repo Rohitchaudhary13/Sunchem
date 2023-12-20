@@ -23,7 +23,7 @@ const Whoweare = () => {
                   scale: 1.05,
                   transition:{ duration: 0.5, ease: 'anticipate' }
                 }}
-                whileTap={{ scale: 0.9 }}
+                whileTap={{ scale: 1 }}
                 className='rounded-xl w-full md:w-auto'
                 src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-shvets-production-9774902.jpg?updatedAt=1702470071637'
                 alt=''

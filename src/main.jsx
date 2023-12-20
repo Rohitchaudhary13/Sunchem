@@ -11,6 +11,7 @@ import App from './App';
 import About from './pages/About';
 import ProdCategories from './pages/ProdCategories';
 import Contact from './pages/Contact';
+import Products from './pages/Products';
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "contact",
     element: (<Contact />),
+  },
+  {
+    path: "products",
+    element: (<Products />),
   },
 ]);
 

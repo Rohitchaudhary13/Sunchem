@@ -248,10 +248,9 @@ const Categories = () => {
               <SwiperSlide key={index}>
                 <motion.div
                   whileHover={{
-                    scale: 1.1,
+                    scale: 1.05,
                     transition:{ duration: 0.5, ease: 'anticipate' }
                   }}
-                  whileTap={{ scale: 0.9 }}
                   className='rounded-2xl bg-[#fff]'>
                   <video
                     className='h-60 md:h-80 lg:h-60 w-full object-cover rounded-t-2xl'

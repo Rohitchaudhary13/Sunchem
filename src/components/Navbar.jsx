@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className=" bg-dark text-secondary absolute w-full px-4">
+      <nav className=" bg-transparent text-secondary absolute w-full px-4">
         <div className="flex flex-wrap items-center justify-between mx-auto">
           <Link
             to="/"
@@ -38,35 +38,35 @@ const Navbar = () => {
           </button>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 md:p-0 md:flex-row md:mt-0 items-center">
-              <li className="px-4">
+              <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
                 <Link
                   to="/"
-                  className="block py-2 px-3  rounded md:bg-transparent  md:p-0"
+                  className="block py-2 px-3 active:underline rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
                   Home
                 </Link>
               </li>
-              <li className="px-4">
+              <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
                 <Link
                   to="/about"
-                  className="block py-2 px-3 rounded  md:border-0"
+                  className="block py-2 px-3 rounded active:underline md:border-0"
                 >
                   About
                 </Link>
               </li>
               {/* <li className="px-4">
                 <Link
-                  to="services"
+                  to="/products"
                   className="block py-2 px-3 rounded  md:border-0"
                 >
-                  Services
+                  Products
                 </Link>
               </li> */}
-              <li className="px-4">
+              <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
                 <Link
                   to="/product-category"
-                  className="block py-2 px-3 rounded  md:border-0"
+                  className="block py-2 px-3 rounded active:underline md:border-0"
                 >
                   Products
                 </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
                   Clients
                 </Link>
               </li> */}
-              <li className="px-4 bg-primary border-solid transition-all duration-300 ease-in-out rounded-full border-dark hover:bg-secondary hover:text-primary">
+              <li className="px-4 bg-dark border-solid transition-all duration-300 ease-in-out rounded-full border-dark hover:bg-primary hover:text-dark">
                 <Link
                   to="/contact"
                   class="block py-2 px-3 rounded  md:border-0"

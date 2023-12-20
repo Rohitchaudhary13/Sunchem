@@ -248,11 +248,11 @@ const Feedback = (props) => {
         {feedback.map((item, index) => (
           <SwiperSlide key={index}>
             <motion.div
-              whileHover={{
-                scale: 1.05,
-                transition:{ duration: 0.5, ease: 'anticipate' }
-              }}
-              whileTap={{ scale: 0.9 }}
+              // whileHover={{
+              //   scale: 1.05,
+              //   transition:{ duration: 0.5, ease: 'anticipate' }
+              // }}
+              // whileTap={{ scale: 0.9 }}
               className="flex justify-evenly flex-col rounded-2xl w-96 md:w-80 lg:w-96 h-80 border-2 bg-[#fff] border-solid border-gray-200 p-4">
               <div className="flex justify-between w-full">
                 <img

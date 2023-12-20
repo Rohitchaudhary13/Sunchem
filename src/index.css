@@ -60,7 +60,7 @@ body {
   color: black;
 }
 button {
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 0.75rem 1.35rem 0.75rem 1.35rem;
   border-radius: 30px;
   font-size: 1rem;
   /* font-weight: bold; */
@@ -73,7 +73,14 @@ p {
   font-family: poppins, "sans-serif";
 }
 
-
+.glass{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+}
 
 
 
