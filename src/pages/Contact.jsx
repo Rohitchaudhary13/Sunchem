@@ -15,7 +15,6 @@
 //           <h2 className='text-5xl'><span className="italic">Fuel Your Brand’s Goals with us</span></h2>
 //           <div className='flex pt-4 pb-8 gap-8 justify-center'>
 //             <div className='w-1/2'>
-            
 
 // <form class="w-full mx-auto">
 // <p className='w-full pb-8'>You will get a response within 24 hours. We will explain in details how we can help you fuel and grow your brand within the stated budget.</p>
@@ -73,185 +72,179 @@
 
 // export default Contact
 
-
-
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { DarkButton } from '../components/Button';
-import { motion } from 'framer-motion';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { DarkButton } from "../components/Button";
+import { motion } from "framer-motion";
+import MapSelector from "../components/MapSelector";
 
 const Contact = () => {
   return (
     <div>
-      <div className='relative h-screen'>
+      <div className="relative h-screen">
         <Navbar />
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
           exit={{ opacity: 0 }}
-          src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg?updatedAt=1702899341080'
-          className='w-full h-full absolute top-0 -z-10 object-cover'
-          alt='...'
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg?updatedAt=1702899341080"
+          className="w-full h-full absolute top-0 -z-10 object-cover"
+          alt="..."
         />
         <motion.h2
           animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
           transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
-          className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8'>
-          <span className='italic'>Feel free</span> to <br /> connect with <span className='italic'>us</span>
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8"
+        >
+          <span className="italic">Feel free</span> to <br /> connect with{" "}
+          <span className="italic">us</span>
         </motion.h2>
       </div>
-      <div className='w-11/12 mx-auto py-8 md:py-16 relative pb-16'>
-        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl'>
-          <span className='italic'>Fuel Your Brand’s Goals with us</span>
+      <div className="w-11/12 mx-auto py-8 md:py-16 relative pb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
+          <span className="italic">Fuel Your Brand’s Goals with us</span>
         </h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-          <div className='w-full'>
-              <p className='w-full pb-8'>
-                You will get a response within 24 hours. We will explain in
-                details how we can help you fuel and grow your brand within the
-                stated budget.
-              </p>
-            <form className='w-11/12'>
-              <div className='relative z-0 w-full mb-5 group'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="w-full">
+            <p className="w-full pb-8">
+              You will get a response within 24 hours. We will explain in
+              details how we can help you fuel and grow your brand within the
+              stated budget.
+            </p>
+            <form className="w-11/12">
+              <div className="relative z-0 w-full mb-5 group">
                 <input
-                  type='email'
-                  name='floating_email'
-                  id='floating_email'
-                  className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                  placeholder=' '
+                  type="email"
+                  name="floating_email"
+                  id="floating_email"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                  placeholder=" "
                   required
                 />
                 <label
-                  htmlFor='floating_email'
-                  className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                  htmlFor="floating_email"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Email address
                 </label>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6'>
-                <div className='relative z-0 w-full mb-5 group'>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                <div className="relative z-0 w-full mb-5 group">
                   <input
-                    type='text'
-                    name='floating_first_name'
-                    id='floating_first_name'
-                    className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                    placeholder=' '
+                    type="text"
+                    name="floating_first_name"
+                    id="floating_first_name"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                    placeholder=" "
                     required
                   />
                   <label
-                    htmlFor='floating_first_name'
-                    className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                    htmlFor="floating_first_name"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     First name
                   </label>
                 </div>
-                <div className='relative z-0 w-full mb-5 group'>
+                <div className="relative z-0 w-full mb-5 group">
                   <input
-                    type='text'
-                    name='floating_last_name'
-                    id='floating_last_name'
-                    className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                    placeholder=' '
+                    type="text"
+                    name="floating_last_name"
+                    id="floating_last_name"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                    placeholder=" "
                     required
                   />
                   <label
-                    htmlFor='floating_last_name'
-                    className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                    htmlFor="floating_last_name"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Last name
                   </label>
                 </div>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6'>
-                <div className='relative z-0 w-full mb-5 group'>
+              <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6">
+                <div className="relative z-0 w-full mb-5 group">
                   <input
-                    type='tel'
-                    pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
-                    name='floating_phone'
-                    id='floating_phone'
-                    className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                    placeholder=' '
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    name="floating_phone"
+                    id="floating_phone"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                    placeholder=" "
                     required
                   />
                   <label
-                    htmlFor='floating_phone'
-                    className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                    htmlFor="floating_phone"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Phone number (123-456-7890)
                   </label>
                 </div>
-                <div className='relative z-0 w-full mb-5 group'>
+                <div className="relative z-0 w-full mb-5 group">
                   <input
-                    type='text'
-                    name='floating_company'
-                    id='floating_company'
-                    className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                    placeholder=' '
+                    type="text"
+                    name="floating_company"
+                    id="floating_company"
+                    className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                    placeholder=" "
                     required
                   />
                   <label
-                    htmlFor='floating_company'
-                    className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                    htmlFor="floating_company"
+                    className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
                     Company (Ex. Google)
                   </label>
                 </div>
               </div>
-              <div className='relative z-0 w-full mb-5 group'>
+              <div className="relative z-0 w-full mb-5 group">
                 <input
-                  type='email'
-                  name='floating_designation'
-                  id='floating_designation'
-                  className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                  placeholder=' '
+                  type="email"
+                  name="floating_designation"
+                  id="floating_designation"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                  placeholder=" "
                   required
                 />
                 <label
-                  htmlFor='floating_designation'
-                  className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                  htmlFor="floating_designation"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Your Designation
                 </label>
               </div>
-              <div className='relative z-0 w-full mb-5 group'>
+              <div className="relative z-0 w-full mb-5 group">
                 <input
-                  type='text'
-                  name='floating_project_description'
-                  id='floating_project_description'
-                  className='block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer'
-                  placeholder=' '
+                  type="text"
+                  name="floating_project_description"
+                  id="floating_project_description"
+                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer"
+                  placeholder=" "
                   required
                 />
                 <label
-                  htmlFor='floating_project_description'
-                  className='peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6'
+                  htmlFor="floating_project_description"
+                  className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                 >
                   Describe your project in brief
                 </label>
               </div>
-              <div className='pt-6'>
-                <DarkButton name='Submit Enquiry' />
+              <div className="pt-6">
+                <DarkButton name="Submit Enquiry" />
               </div>
             </form>
           </div>
-          <div className='w-full overflow-hidden rounded-2xl'>
+          <div className="w-full overflow-hidden rounded-2xl">
             <img
-              src='https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pavan-trikutam-71CjSSB83Wo-unsplash.jpg?updatedAt=1702810712269'
-              className='w-full h-full object-cover rounded-2xl transition-all duration-200 ease-in-out hover:scale-110'
-              alt=''
+              src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pavan-trikutam-71CjSSB83Wo-unsplash.jpg?updatedAt=1702810712269"
+              className="w-full h-full object-cover rounded-2xl transition-all duration-200 ease-in-out hover:scale-110"
+              alt=""
             />
           </div>
         </div>
-        <iframe
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.1239710975224!2d72.85051177463862!3d19.146049949770845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b750461e5157%3A0xe1936cc05d999ed0!2sGuru%20Gobind%20Singh%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1702811254300!5m2!1sen!2sin'
-          className='w-full mt-8 h-96 border-none rounded-xl'
-          allowFullScreen=''
-          loading='lazy'
-          referrerPolicy='no-referrer-when-downgrade'
-        ></iframe>
+        <MapSelector />
       </div>
       <Footer />
     </div>
