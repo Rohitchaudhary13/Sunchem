@@ -3,9 +3,11 @@ import { products } from "../components/data";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
+import { ScrollRestoration } from "react-router-dom";
 const Products = () => {
   return (
     <div>
+      <ScrollRestoration />
       <div className="relative h-screen">
         <Navbar />
         <motion.img

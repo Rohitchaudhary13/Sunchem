@@ -78,10 +78,12 @@ import Footer from "../components/Footer";
 import { DarkButton } from "../components/Button";
 import { motion } from "framer-motion";
 import MapSelector from "../components/MapSelector";
+import { ScrollRestoration } from "react-router-dom";
 
 const Contact = () => {
   return (
     <div>
+      <ScrollRestoration />
       <div className="relative h-screen">
         <Navbar />
         <motion.img

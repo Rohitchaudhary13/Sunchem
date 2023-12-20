@@ -121,6 +121,7 @@ import { PiHandshake } from "react-icons/pi";
 import { FaRegLightbulb, FaPencilRuler } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { IoIosFlash } from "react-icons/io";
+import { ScrollRestoration } from "react-router-dom";
 
 const About = () => {
   const iconComponents = {
@@ -133,6 +134,7 @@ const About = () => {
 
   return (
     <div>
+      <ScrollRestoration />
       <div className="relative h-screen">
         <Navbar />
         <motion.img

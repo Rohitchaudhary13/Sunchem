@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+    <ScrollRestoration />
     <Navbar />
     <Hero />
     <Categories />

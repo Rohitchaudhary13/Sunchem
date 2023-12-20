@@ -5,7 +5,7 @@ const Navbar = () => {
   const location = useLocation();
   const getNavLinkClass = (path) => {
     return location.pathname === path
-      ? "px-4 max-[600px]:m-4 max-[600px]:text-lg bg-primary text-black border-solid border-dark hover:bg-secondary transition-all duration-300 ease-in-out rounded-full"
+      ? "px-4 max-[600px]:m-4 max-[600px]:text-lg decoration-primary underline underline-offset-8"
       : "px-4 max-[600px]:m-4 max-[600px]:text-lg";
   };
 
@@ -81,7 +81,7 @@ const Navbar = () => {
                   Products
                 </Link>
               </li>              
-              <li className={getNavLinkClass("/contact")}>
+              <li className="px-4 max-[600px]:m-4 max-[600px]:text-lg bg-primary text-black border-solid border-dark hover:bg-secondary transition-all duration-300 ease-in-out rounded-full">
                 <Link
                   to="/contact"
                   className="block py-2 px-3 rounded  md:border-0"
