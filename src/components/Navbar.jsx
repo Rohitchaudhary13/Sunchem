@@ -1,7 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const getNavLinkClass = (path) => {
+    return location.pathname === path
+      ? "px-4 max-[600px]:m-4 max-[600px]:text-lg bg-primary text-black border-solid border-dark hover:bg-secondary transition-all duration-300 ease-in-out rounded-full"
+      : "px-4 max-[600px]:m-4 max-[600px]:text-lg";
+  };
+
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   return (
     <>
       <nav className=" bg-transparent text-secondary absolute w-full px-4">
@@ -10,14 +22,20 @@ const Navbar = () => {
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL_CC_white.png?updatedAt=1702455762523" className="p-2" width={160} alt="" />
+            <img
+              src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL_CC_white.png?updatedAt=1702455762523"
+              className="p-2"
+              width={160}
+              alt=""
+            />
           </Link>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  focus:outline-none focus:ring-2"
             aria-controls="navbar-default"
-            aria-expanded="false"
+            aria-expanded={isNavbarOpen ? 'true' : 'false'}
+            onClick={toggleNavbar}  
           >
             <span className="sr-only">Open main menu</span>
             <svg
@@ -36,18 +54,18 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <div className={`${isNavbarOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
             <ul className="flex flex-col p-4 md:p-0 md:flex-row md:mt-0 items-center">
               <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
                 <Link
                   to="/"
-                  className="block py-2 px-3 active:underline rounded md:bg-transparent md:p-0"
+                  className="block py-2 px-3  rounded md:bg-transparent  md:p-0"
                   aria-current="page"
                 >
                   Home
                 </Link>
               </li>
-              <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
+              <li className="px-4">
                 <Link
                   to="/about"
                   className="block py-2 px-3 rounded active:underline md:border-0"
@@ -57,29 +75,29 @@ const Navbar = () => {
               </li>
               {/* <li className="px-4">
                 <Link
-                  to="/products"
+                  to="services"
                   className="block py-2 px-3 rounded  md:border-0"
                 >
-                  Products
+                  Services
                 </Link>
               </li> */}
-              <li className="px-4 hover:underline underline-offset-8 decoration-primary transition duration-300 ease-in-out">
+              <li className="px-4">
                 <Link
                   to="/product-category"
                   className="block py-2 px-3 rounded active:underline md:border-0"
                 >
                   Products
                 </Link>
-              </li>
-              {/* <li className="px-4">
+              </li>              
+              <li className={getNavLinkClass("/contact")}>
                 <Link
-                  to="#"
+                  to="/contact"
                   className="block py-2 px-3 rounded  md:border-0"
                 >
                   Clients
                 </Link>
               </li> */}
-              <li className="px-4 bg-dark border-solid transition-all duration-300 ease-in-out rounded-full border-dark hover:bg-primary hover:text-dark">
+              <li className="px-4 bg-primary border-solid transition-all duration-300 ease-in-out rounded-full border-dark hover:bg-secondary hover:text-primary">
                 <Link
                   to="/contact"
                   class="block py-2 px-3 rounded  md:border-0"
