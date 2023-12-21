@@ -32,7 +32,7 @@ const router = createBrowserRouter([
     element: (<Contact />),
   },
   {
-    path: "products",
+    path: "products/:id",
     element: (<Products />),
   },
 ]);

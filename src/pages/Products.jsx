@@ -1,10 +1,18 @@
 import React from "react";
-import { products } from "../components/data";
+import { productCatalog } from "../components/data";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
-import { ScrollRestoration } from "react-router-dom";
+import { ScrollRestoration, useParams } from "react-router-dom";
+
 const Products = () => {
+  const { id } = useParams();
+  const product = productCatalog.find(item => item.id === parseInt(id, 10));
+  if (!product) {
+    return <div>Product not found</div>;
+  }
+  console.log(product)
+
   return (
     <div>
       <ScrollRestoration />
@@ -33,7 +41,7 @@ const Products = () => {
           <span className="italic">Products</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8">
-          {products.map((item, index) => (
+          {product.prods.images.map((image, index) => (
             <motion.div
               whileHover={{
                 scale: 1.05,
@@ -44,14 +52,14 @@ const Products = () => {
               className="w-full rounded-2xl h-[40vh] md:h-[50vh] bg-secondary bg-opacity-20  backdrop-blur-md bg-clip-padding backdrop-filter border border-opacity-30 border-white shadow-md relative "
             >
               <img
-                src={item.logo}
+                src={image}
                 className="rounded-xl w-full h-full object-cover"
                 alt=""
               />
               <button className="hover:bg-dark hover:text-secondary duration-300 transition-all ease-in-out outline-none py-2 w-11/12 absolute bottom-2 bg-secondary rounded-xl px-4 italic font-newsreader left-1/2 transform -translate-x-1/2">
-                {item.category}
+                {product.prods.titles[index]}
               </button>
-              <h2 className="py-2">{item.title}</h2>
+              <h2 className="py-2">{product.prods.subject[index]}</h2>
             </motion.div>
           ))}
         </div>
