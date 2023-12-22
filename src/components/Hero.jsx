@@ -11,7 +11,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
         className="z-20 xl:w-2/5 p-6 rounded-2xl m-4 bg-secondary glass"
       >
-        <h1 className="text-4xl md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-6xl">
           Blending <span className="italic">science</span> &{" "}
           <span className="italic">creativity</span>, for beautiful{" "}
           <span className="italic">skincare</span>

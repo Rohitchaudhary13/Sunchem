@@ -2,11 +2,12 @@ import React from 'react';
 import { categories, clients } from './data';
 import Marquee from './MyMarquee';
 import { motion } from 'framer-motion';
+import { DarkButton } from './Button';
 
 const Whoweare = () => {
   return (
     <>
-      <div className='h-auto md:h-screen w-11/12 mx-auto'>
+      <div className='h-auto md:h-full w-11/12 mx-auto'>
         <div className='mt-16'>
           <h2 className='text-3xl md:text-5xl text-center mb-8'>
             Who <span className='italic'>we</span> are?
@@ -64,6 +65,9 @@ const Whoweare = () => {
                 your vision into reality.
               </p>
             </div>
+          </div>
+          <div className='flex justify-center my-12'>
+          <DarkButton name="Let's Connect" />
           </div>
         </div>
       </div>

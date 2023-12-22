@@ -84,9 +84,9 @@ const Contact = () => {
   return (
     <div>
       <ScrollRestoration />
-      <div className="relative h-screen">
+      <div className="relative h-16">
         <Navbar />
-        <motion.img
+        {/* <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
@@ -94,15 +94,15 @@ const Contact = () => {
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ricardo-gomez-angel-D9kOnC_1AHw-unsplash.jpg?updatedAt=1702899341080"
           className="w-full h-full absolute top-0 -z-10 object-cover"
           alt="..."
-        />
-        <motion.h2
+        /> */}
+        {/* <motion.h2
           animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
           transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto top-1/2 absolute left-8"
         >
           <span className="italic">Feel free</span> to <br /> connect with{" "}
           <span className="italic">us</span>
-        </motion.h2>
+        </motion.h2> */}
       </div>
       <div className="w-11/12 mx-auto py-8 md:py-16 relative pb-16">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
@@ -236,6 +236,11 @@ const Contact = () => {
               <div className="pt-6">
                 <DarkButton name="Submit Enquiry" />
               </div>
+              {/* <img
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ellipse.png?updatedAt=1702548819472"
+          className="absolute top-1/3 -left-56 -z-10"
+          alt="..."
+        /> */}
             </form>
           </div>
           <div className="w-full overflow-hidden rounded-2xl">

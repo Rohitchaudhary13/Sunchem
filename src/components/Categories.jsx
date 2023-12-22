@@ -208,6 +208,7 @@ import 'swiper/css';
 import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr';
 import { categories } from './data';
 import { motion } from 'framer-motion';
+import { DarkButton } from './Button';
 
 
 const Categories = () => {
@@ -285,6 +286,9 @@ const Categories = () => {
             <GrLinkNext size={25} />
           </button>
         </div>
+        {/* <div className='flex gap-4 pt-8 justify-center'>
+          <DarkButton name="Browse All Products" />
+        </div> */}
       </div>
     </div>
   );

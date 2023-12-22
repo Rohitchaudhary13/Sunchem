@@ -135,25 +135,25 @@ const About = () => {
   return (
     <div>
       <ScrollRestoration />
-      <div className="relative h-screen">
+      <div className="relative h-96">
         <Navbar />
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
           exit={{ opacity: 0 }}
-          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pmv-chamara-ILhf4VsPn_w-unsplash(1).jpg?updatedAt=1702981478509"
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg?updatedAt=1702951662853"
           className="w-full h-full absolute top-0 -z-10 object-cover"
           alt="..."
         />
-        <motion.h2
+        {/* <motion.h2
           animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
           transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-secondary w-11/12 mx-auto top-1/2 absolute left-8 mt-8"
         >
           <span className="italic">Beauty</span> from <br /> skin to{" "}
           <span className="italic">soul</span>
-        </motion.h2>
+        </motion.h2> */}
       </div>
       <div className="w-11/12 mx-auto relative mt-8 md:mt-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
@@ -188,8 +188,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <MyMarquee />
       <div className="my-8 md:my-16">
+      <MyMarquee />
         <img
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-sora-shimazaki-5938245.jpg?updatedAt=1702700240179"
           className="w-full h-[50vh] md:h-[80vh] object-cover"

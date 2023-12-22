@@ -16,25 +16,25 @@ const Products = () => {
   return (
     <div>
       <ScrollRestoration />
-      <div className="relative h-screen">
+      <div className="relative h-96">
         <Navbar />
         <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
           exit={{ opacity: 0 }}
-          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/manufacturing.jpg?updatedAt=1702806643746"
+          src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/content-pixie-TxBQ7yLj6JU-unsplash.jpg?updatedAt=1702981138892"
           className="w-full h-full absolute top-0 -z-10 object-cover"
           alt="..."
         />
-        <motion.h2
+        {/* <motion.h2
           animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
           transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
-          className="text-3xl absolute top-1/2 left-8 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto"
+          className="text-3xl absolute top-1/3 left-8 sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl mt-8 md:mt-16 text-secondary w-11/12 mx-auto"
         >
           <span className="italic">Check out</span> our <br />{" "}
           <span className="italic">exclusive products</span>
-        </motion.h2>
+        </motion.h2> */}
       </div>
       <div className="w-11/12 mx-auto relative pb-8 md:pb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">

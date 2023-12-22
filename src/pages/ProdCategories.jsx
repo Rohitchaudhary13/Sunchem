@@ -9,9 +9,9 @@ const ProdCategories = () => {
   return (
     <div>
       <ScrollRestoration />
-      <div className="relative h-screen">
+      <div className="relative h-16">
         <Navbar />
-        <motion.img
+        {/* <motion.img
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
@@ -27,7 +27,7 @@ const ProdCategories = () => {
         >
           <span className="italic">Let’s look</span> into our <br />{" "}
           <span className="italic">product catalog</span>
-        </motion.h2>
+        </motion.h2> */}
       </div>
       <div className="w-11/12 mx-auto relative pb-8 md:pb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">
