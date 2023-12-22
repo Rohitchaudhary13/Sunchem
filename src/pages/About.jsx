@@ -157,11 +157,11 @@ const About = () => {
       </div>
       <div className="w-11/12 mx-auto relative mt-8 md:mt-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
-          Sun Chem India <br />
-          <span className="italic">since</span> 1985
+          Sun Chem India 
+          <span className="italic"> since</span> 1985
         </h2>
-        <div className="flex flex-col md:flex-row justify-between gap-8 items-start py-8">
-          <div className="w-full md:w-1/3">
+        <div className="flex flex-col md:flex-row justify-between gap-16 items-start py-8">
+          <div className="w-full md:w-2/5">
             <h2 className="italic text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl">
               Our Company
             </h2>
@@ -240,6 +240,9 @@ const About = () => {
             </div>
           </div>
         </div>
+          <div className="flex justify-center">
+            <DarkButton name="Connect with us" />
+          </div>
       </div>
       <div className="w-11/12 mx-auto">
         <Feedback start={`In the`} end={``} italic={`Spotlight`} />
