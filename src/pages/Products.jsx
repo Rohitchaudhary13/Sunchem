@@ -1,5 +1,5 @@
 import React from "react";
-import { productCatalog } from "../components/data";
+import { productCatalog } from "../assets/productCatalog";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
@@ -37,8 +37,8 @@ const Products = () => {
         </motion.h2> */}
       </div>
       <div className="w-11/12 mx-auto relative pb-8 md:pb-16">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">
-          <span className="italic">Products</span>
+        <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">
+          <span className="italic">{product.category}</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-8">
           {product.prods.images.map((image, index) => (
@@ -59,7 +59,7 @@ const Products = () => {
               <button className="hover:bg-dark hover:text-secondary duration-300 transition-all ease-in-out outline-none py-2 w-11/12 absolute bottom-2 bg-secondary rounded-xl px-4 italic font-newsreader left-1/2 transform -translate-x-1/2">
                 {product.prods.titles[index]}
               </button>
-              <h2 className="py-2">{product.prods.subject[index]}</h2>
+              {/* <h2 className="py-2">{product.prods.subject[index]}</h2> */}
             </motion.div>
           ))}
         </div>
