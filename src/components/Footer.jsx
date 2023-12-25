@@ -29,7 +29,7 @@ const FooterComponent = () => {
             <div className=" flex flex-col">
               <Link className="py-2" to="/about"><span className='opacity-50 hover:opacity-100'>About</span></Link>
               <Link className="py-2" to="/product-category"><span className='opacity-50 hover:opacity-100'>Products</span></Link>
-              <Link className="py-2" to="/contact"><span className='opacity-50 hover:opacity-100'>Products</span></Link>
+              <Link className="py-2" to="/contact"><span className='opacity-50 hover:opacity-100'>Contact</span></Link>
             </div>
           </div>
           <div className="mb-6 sm:mb-0">

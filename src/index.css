@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.cds{
+  @media screen and (max-width:448px) {
+    margin: 5rem 0;
+  }
+}
 .vertical-timeline-custom-line{
   --line-color: black;
 }

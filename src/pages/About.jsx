@@ -155,7 +155,7 @@ const About = () => {
           <span className="italic">soul</span>
         </motion.h2> */}
       </div>
-      <div className="w-11/12 mx-auto relative mt-8 md:mt-20">
+      <div className="w-11/12 mx-auto relative mt-16 md:mt-20">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
           Sun Chem India 
           <span className="italic"><br /> since</span> 1985
@@ -289,7 +289,7 @@ const About = () => {
           <span className="italic">Reach</span> Us Out
         </h2>
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="bg-secondary rounded-3xl p-8 w-full md:w-1/2 h-[50vh] lg:h-[70vh] flex flex-col justify-evenly gap-4">
+          <div className="bg-secondary rounded-3xl p-8 w-full md:w-1/2 h-[50vh] lg:h-[70vh] flex flex-col justify-evenly gap-4 cds">
             <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               <span className="italic">Connect</span> with us
             </h2>
