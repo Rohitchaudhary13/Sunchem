@@ -121,7 +121,7 @@ import { PiHandshake } from "react-icons/pi";
 import { FaRegLightbulb, FaPencilRuler } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { IoIosFlash } from "react-icons/io";
-import { ScrollRestoration } from "react-router-dom";
+import { Link, ScrollRestoration } from "react-router-dom";
 
 const About = () => {
   const iconComponents = {
@@ -143,7 +143,7 @@ const About = () => {
           transition={{ duration: 2, ease: [0.075, 0.082, 0.165, 1] }}
           exit={{ opacity: 0 }}
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg?updatedAt=1702951662853"
-          className="w-full h-full absolute top-0 -z-10 object-cover"
+          className="w-full h-[27rem] absolute top-0 -z-10 object-cover"
           alt="..."
         />
         {/* <motion.h2
@@ -155,10 +155,10 @@ const About = () => {
           <span className="italic">soul</span>
         </motion.h2> */}
       </div>
-      <div className="w-11/12 mx-auto relative mt-8 md:mt-16">
+      <div className="w-11/12 mx-auto relative mt-8 md:mt-20">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
           Sun Chem India 
-          <span className="italic"> since</span> 1985
+          <span className="italic"><br /> since</span> 1985
         </h2>
         <div className="flex flex-col md:flex-row justify-between gap-16 items-start py-8">
           <div className="w-full md:w-2/5">
@@ -188,6 +188,11 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className='fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2'>
+    <Link to="contact">
+    <button className='px-6 py-4 bg-primary text-dark w-96 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out'>Contact Us</button>
+    </Link>
+    </div>
       <div className="my-8 md:my-16">
       <MyMarquee />
         <img

@@ -9,15 +9,15 @@ const Hero = () => {
       <motion.div
         animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
         transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}
-        className="z-20 xl:w-2/5 p-6 rounded-2xl m-4 bg-secondary glass"
+        className="z-20 xl:w-full p-6 rounded-2xl m-4 bg-secondary glass"
       >
-        <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-6xl">
+        <h1 className="text-4xl md:text-6xl text-center pb-24 lg:text-7xl xl:text-6xl">
           Blending <span className="italic">science</span> &{" "}
           <span className="italic">creativity</span>, for beautiful{" "}
-          <span className="italic">skincare</span>
-          <br /> since 1985.
+          <span className="italic">skincare </span>
+           since 1985.
         </h1>
-        <div className="mt-2 z-20">
+        <div className="mt-2 hidden z-20">
           <Link to="/product-category">
             <DarkButton name="Browse our products" />
           </Link>

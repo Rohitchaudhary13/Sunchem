@@ -29,6 +29,11 @@ const ProdCategories = () => {
           <span className="italic">product catalog</span>
         </motion.h2> */}
       </div>
+      <div className='fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2'>
+    <Link to="contact">
+    <button className='px-6 py-4 bg-primary text-dark w-96 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out'>Contact Us</button>
+    </Link>
+    </div>
       <div className="w-11/12 mx-auto relative pb-8 md:pb-16">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">
           <span className="italic">Product Categories</span>

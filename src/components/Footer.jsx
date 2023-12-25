@@ -15,7 +15,7 @@ const FooterComponent = () => {
       <div onClick={scrollToTop} className='cursor-pointer text-5xl absolute right-16' style={{bottom:'22%'}}>
         <FiArrowUpCircle /> 
       </div>
-      <div className="w-11/12 mx-auto grid justify-between items-center sm:flex sm:justify-between md:flex md:grid-cols-1">
+      <div className="pb-8 w-11/12 mx-auto grid justify-between items-center sm:flex sm:justify-between md:flex md:grid-cols-1">
         <div className="my-8 sm:mt-0">
           <img
             src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL.png?updatedAt=1702463627015"

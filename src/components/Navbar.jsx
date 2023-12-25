@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className=" bg-dark text-secondary fixed z-50 w-full px-4">
+      <nav className=" bg-dark text-secondary absolute z-50 w-full px-4">
         <div className="flex flex-wrap items-center justify-between mx-auto">
           <Link
             to="/"
@@ -81,7 +81,7 @@ const Navbar = () => {
                   Products
                 </Link>
               </li>              
-              <li className="px-4 max-[600px]:m-4 max-[600px]:text-lg bg-primary text-black border-solid border-dark hover:bg-secondary transition-all duration-300 ease-in-out rounded-full">
+              <li className="px-4 max-[600px]:m-4 max-[600px]:text-lg text-secondary">
                 <Link
                   to="/contact"
                   className="block py-2 px-3 rounded  md:border-0"
