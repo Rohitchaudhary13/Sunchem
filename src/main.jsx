@@ -17,25 +17,28 @@ import Products from './pages/Products';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (<App />),
-  },
-  {
-    path: "about",
-    element: (<About />),
-  },
-  {
-    path: "product-category",
-    element: (<ProdCategories />),
-  },
-  {
-    path: "contact",
-    element: (<Contact />),
-  },
-  {
-    path: "products/:id",
-    element: (<Products />),
+    element: <App />,
+    children: [
+      {
+        path: "about", // No leading slash for nested route
+        element: <About />,
+      },
+      {
+        path: "product-category", // No leading slash for nested route
+        element: <ProdCategories />,
+      },
+      {
+        path: "contact", // No leading slash for nested route
+        element: <Contact />,
+      },
+      {
+        path: "products/:id", // No leading slash for nested route
+        element: <Products />,
+      },
+    ],
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
