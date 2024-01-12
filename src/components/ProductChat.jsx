@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsChatQuoteFill } from "react-icons/bs";
-import { LiaWindowClose } from "react-icons/lia";
+import { CgCloseO } from "react-icons/cg";
 
 
 
@@ -67,7 +67,7 @@ const ProductChat = () => {
           onClick={handleOpenModal}
           className="px-6 py-4 bg-primary text-dark hover:bg-dark hover:scale-105 hover:text-primary transition-all duration-300 ease-in-out flex gap-2 items-center"
         >
-          <BsChatQuoteFill size={30} /> Get a Quote
+          <BsChatQuoteFill size={30} /> <p className="hidden md:block">Get a Quote</p>
         </button>
       </div>
       <div
@@ -80,8 +80,8 @@ const ProductChat = () => {
           <h2 className="text-center text-2xl font-bold">
             Product Inquiry
           </h2>
-          <button onClick={handleCloseModal}>
-            <LiaWindowClose size={30} />
+          <button className="-mt-2" onClick={handleCloseModal}>
+            <CgCloseO size={30} />
           </button>
           </div>
           {/* Chatbot message */}

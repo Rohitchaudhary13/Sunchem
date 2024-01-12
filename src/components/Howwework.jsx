@@ -114,6 +114,7 @@ import {LuPackageOpen  } from 'react-icons/lu'
 import {FaTrademark } from 'react-icons/fa6'
 import {MdOutlineCoffeeMaker,MdCelebration  } from 'react-icons/md'
 import { TbReportSearch, TbTruckDelivery } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Howwework = () => {
   return (
@@ -126,7 +127,7 @@ const Howwework = () => {
           35+ years experience in creating advanced cosmetic formulations.
         </p>
         <div>
-          <VerticalTimeline className="vertical-timeline-custom-line">
+          <VerticalTimeline className="vertical-timeline-custom-line">       
             <VerticalTimelineElement
               className="vertical-timeline-element--work cursor-pointer"
               icon={<PiStrategyBold />}
@@ -141,12 +142,12 @@ const Howwework = () => {
                 color: "#000",
                 boxShadow: "none",
               }}
-            >
+            >       
               <h2 className="vertical-timeline-element-title">
                 Understanding & Strategy
               </h2>
               <p>Delving deep into your product needs and market trends, our strategic approach aligns with your vision, tailoring solutions to meet business goals.</p>
-            </VerticalTimelineElement>
+            </VerticalTimelineElement>        
             <VerticalTimelineElement
               contentStyle={{
                 boxShadow: "none",

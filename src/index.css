@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  -webkit-tap-highlight-color: transparent;
+}
 .cds{
   @media screen and (max-width:448px) {
     margin: 5rem 0;
@@ -115,4 +117,8 @@ backdrop-filter: blur(4px);
   background-color: #0c0a09;
   border-radius: 15px;
   border: 5px none #ffffff;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in{  
+  animation-duration: 0s !important;
 }

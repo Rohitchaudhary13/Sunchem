@@ -74,7 +74,7 @@ const Products = () => {
         </div>
         <img
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ellipse.png?updatedAt=1702548819472"
-          className="absolute top-1/3 left-1/3 -z-10"
+          className="hidden md:block absolute top-1/3 left-1/3 -z-10"
           alt="..."
         />
       </div>

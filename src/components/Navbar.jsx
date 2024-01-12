@@ -32,29 +32,55 @@ const Navbar = () => {
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  focus:outline-none focus:ring-2"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  focus:outline-none "
             aria-controls="navbar-default"
-            aria-expanded={isNavbarOpen ? 'true' : 'false'}
-            onClick={toggleNavbar}  
+            aria-expanded={isNavbarOpen ? "true" : "false"}
+            onClick={toggleNavbar}
           >
             <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+            {isNavbarOpen ? (
+              // Icon when the navbar is open (closing icon)
+              <svg
+                className="w-10 h-10"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                {/* Replace this with the closing icon */}
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              // Default hamburger icon
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            )}
           </button>
-          <div className={`${isNavbarOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
+          <div
+            className={`${
+              isNavbarOpen ? "block" : "hidden"
+            } w-full md:block md:w-auto`}
+            id="navbar-default"
+          >
             <ul className="flex flex-col p-4 md:p-0 md:flex-row md:mt-0 items-center">
               <li className={getNavLinkClass("/")}>
                 <Link
@@ -72,7 +98,7 @@ const Navbar = () => {
                 >
                   About
                 </Link>
-              </li>              
+              </li>
               <li className={getNavLinkClass("/product-category")}>
                 <Link
                   to="/product-category"
@@ -80,7 +106,7 @@ const Navbar = () => {
                 >
                   Products
                 </Link>
-              </li>              
+              </li>
               <li className={getNavLinkClass("/contact")}>
                 <Link
                   to="/contact"

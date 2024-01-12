@@ -91,13 +91,13 @@ const Contact = () => {
         <Navbar />
       </div>
       <div className="w-11/12 mx-auto py-8 md:py-16 relative pb-16">
-        <div className="flex gap-16">  
+        <div className="flex gap-16 md:flex-row flex-col">  
         <img
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/ellipse.png?updatedAt=1702548819472"
           className="absolute top-4 -left-56 -z-10"
           alt="..."
         />
-          <div className="w-1/3 overflow-hidden flex flex-col items-start justify-center">
+          <div className="w-full md:w-1/3 overflow-hidden flex flex-col items-start justify-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
           <span className="italic">Contact Us</span>
         </h2>
@@ -109,7 +109,7 @@ const Contact = () => {
             <p className="flex gap-4 items-center"><MdOutlineSupportAgent size={30} />Support : 022 2685 5858</p>
             </div>
           </div>
-          <div className="w-2/3 bg-primary p-8 rounded-2xl">
+          <div className="w-full md:w-2/3 bg-primary p-8 rounded-2xl">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl">
           <span className="italic">We'd love to hear from you!</span>
         </h2>

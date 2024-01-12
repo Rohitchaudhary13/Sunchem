@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="h-screen w-1/2 flex justify-start items-end">
+    <div className="h-screen w-full md:w-1/2 flex justify-start items-end">
       <motion.div
         animate={{ y: [500, 0], type: "spring", stiffness: 2000 }}
         transition={{ duration: 1, ease: [0.075, 0.082, 0.165, 1] }}

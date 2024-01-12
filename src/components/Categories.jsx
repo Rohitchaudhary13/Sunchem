@@ -216,7 +216,7 @@ const Categories = () => {
   const swiperRef = useRef();
 
   return (
-    <div className='bg-secondary min-h-screen'>
+    <div className='bg-secondary'>
       <div className='py-16 px-4'>
         <h2 className='text-3xl md:text-5xl lg:text-5xl text-center'>
           Popular

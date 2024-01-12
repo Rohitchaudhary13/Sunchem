@@ -11,7 +11,7 @@ const FooterComponent = () => {
     });
   };
   return (
-    <div className="relative bg-dark text-secondary pt-16 h-96">
+    <div className="relative bg-dark text-secondary pt-16">
       <div onClick={scrollToTop} className='cursor-pointer text-5xl absolute right-16' style={{bottom:'22%'}}>
         <FiArrowUpCircle /> 
       </div>
