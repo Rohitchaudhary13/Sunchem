@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { BsChatQuoteFill } from "react-icons/bs";
+import { LiaWindowClose } from "react-icons/lia";
+
+
 
 const ProductChat = () => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -58,12 +62,12 @@ const ProductChat = () => {
 
   return (
     <>
-      <div className="fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="fixed bottom-8 right-8 z-50">
         <button
           onClick={handleOpenModal}
-          className="px-6 py-4 bg-primary text-dark w-72 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out"
+          className="px-6 py-4 bg-primary text-dark hover:bg-dark hover:scale-105 hover:text-primary transition-all duration-300 ease-in-out flex gap-2 items-center"
         >
-          Get a Quote
+          <BsChatQuoteFill size={30} /> Get a Quote
         </button>
       </div>
       <div
@@ -72,11 +76,16 @@ const ProductChat = () => {
         }`}
       >
         <div className="bg-white p-8 max-w-md rounded-md">
-          <h2 className="text-center text-2xl font-bold mb-4">
+          <div className="flex justify-between items-center">
+          <h2 className="text-center text-2xl font-bold">
             Product Inquiry
           </h2>
+          <button onClick={handleCloseModal}>
+            <LiaWindowClose size={30} />
+          </button>
+          </div>
           {/* Chatbot message */}
-          <div className="bg-primary p-4 mb-4 rounded-l-md">
+          <div className="bg-primary p-4 my-4 rounded-l-md">
             Select Collection & the respective products you want to inquire
             about:
           </div>
@@ -89,7 +98,7 @@ const ProductChat = () => {
             <select
               value={selectedCategory}
               onChange={handleCategoryChange}
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-primary"
+              className="w-full cursor-pointer px-4 py-2 border rounded-md focus:outline-none focus:border-primary"
             >
               <option value="" disabled>
                 Select Collection
@@ -175,12 +184,6 @@ const ProductChat = () => {
               Submit
             </button>
             {/* Close Modal button */}
-            <button
-              onClick={handleCloseModal}
-              className="px-4 py-2 bg-primary rounded-md transition-all duration-300 ease-in-out"
-            >
-              Close Modal
-            </button>
           </div>
         </div>
       </div>

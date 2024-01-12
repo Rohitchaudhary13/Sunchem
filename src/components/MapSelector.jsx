@@ -70,7 +70,7 @@ const MapSelector = () => {
         <h2 className="text-3xl md:text-5xl text-center">
           Our <span className="italic">Factories</span>
         </h2>
-        <div className="max-[700px]:p-0 max-[700px]:flex-col-reverse mt-4 bg-dark border-none rounded-xl flex w-full mx-auto p-4 py-8">
+        <div className="max-[700px]:p-0 max-[700px]:flex-col-reverse mt-4 bg-secondary border-none rounded-xl flex w-full mx-auto p-4 py-8">
           <div className="max-[700px]:w-full h-96 w-5/12 overflow-y-auto p-4">
             <ul>
               {itemsArray.map((item) => (

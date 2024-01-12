@@ -81,7 +81,7 @@ const Navbar = () => {
                   Products
                 </Link>
               </li>              
-              <li className="px-4 max-[600px]:m-4 max-[600px]:text-lg text-secondary">
+              <li className={getNavLinkClass("/contact")}>
                 <Link
                   to="/contact"
                   className="block py-2 px-3 rounded  md:border-0"

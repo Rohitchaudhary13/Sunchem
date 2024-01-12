@@ -11,16 +11,16 @@ const FooterComponent = () => {
     });
   };
   return (
-    <div className="relative bg-secondary pt-4">
+    <div className="relative bg-dark text-secondary pt-16 h-96">
       <div onClick={scrollToTop} className='cursor-pointer text-5xl absolute right-16' style={{bottom:'22%'}}>
         <FiArrowUpCircle /> 
       </div>
       <div className="pb-8 w-11/12 mx-auto grid justify-between items-center sm:flex sm:justify-between md:flex md:grid-cols-1">
         <div className="my-8 sm:mt-0">
           <img
-            src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL.png?updatedAt=1702463627015"
+            src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/SUN-CHEM-INDIA-LOGO-FINAL_CC_white.png?updatedAt=1702455762523"
             alt="logo"
-            className="w-full"
+            className="w-1/2"
           />
         </div>
         <div className="grid grid-cols-1 pb-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
