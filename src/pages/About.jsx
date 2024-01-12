@@ -122,6 +122,7 @@ import { FaRegLightbulb, FaPencilRuler } from "react-icons/fa";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { IoIosFlash } from "react-icons/io";
 import { Link, ScrollRestoration } from "react-router-dom";
+import ProductChat from "../components/ProductChat";
 
 const About = () => {
   const iconComponents = {
@@ -157,8 +158,11 @@ const About = () => {
       </div>
       <div className="w-11/12 mx-auto relative mt-16 md:mt-20">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-6xl">
-          Sun Chem India 
-          <span className="italic"><br /> since</span> 1985
+          Sun Chem India
+          <span className="italic">
+            <br /> since
+          </span>{" "}
+          1985
         </h2>
         <div className="flex flex-col md:flex-row justify-between gap-16 items-start py-8">
           <div className="w-full md:w-2/5">
@@ -188,13 +192,16 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2'>
-    <Link to="contact">
-    <button className='px-6 py-4 bg-primary text-dark w-72 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out'>Contact Us</button>
-    </Link>
-    </div>
+      {/* <div className="fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2">
+        <Link to="contact">
+          <button className="px-6 py-4 bg-primary text-dark w-72 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out">
+            Contact Us
+          </button>
+        </Link>
+      </div> */}
+      <ProductChat />
       <div className="my-8 md:my-16">
-      <MyMarquee />
+        <MyMarquee />
         <img
           src="https://ik.imagekit.io/hfrhxebxv/Sunchem%20Assets/pexels-sora-shimazaki-5938245.jpg?updatedAt=1702700240179"
           className="w-full h-[50vh] md:h-[80vh] object-cover"
@@ -245,9 +252,9 @@ const About = () => {
             </div>
           </div>
         </div>
-          <div className="flex justify-center">
-            <DarkButton name="Connect with us" />
-          </div>
+        <div className="flex justify-center">
+          <DarkButton name="Connect with us" />
+        </div>
       </div>
       <div className="w-11/12 mx-auto">
         <Feedback start={`In the`} end={``} italic={`Spotlight`} />
@@ -297,13 +304,13 @@ const About = () => {
               Welcome to SunChem India, where innovation meets quality in the
               realm of skincare and homecare products. Connect with us to
               explore the latest advancements, industry insights, and
-              collaborative opportunities. 
+              collaborative opportunities.
               <br />
-              Whether you're a customer, partner, or industry
-              enthusiast, we invite you to be part of our journey. 
-              Let's collaborate and bring your brand's vision to life. Transform ideas
-              into quality products with SunChem India – your trusted partner
-              for over 25 years in cosmetic formulations.
+              Whether you're a customer, partner, or industry enthusiast, we
+              invite you to be part of our journey. Let's collaborate and bring
+              your brand's vision to life. Transform ideas into quality products
+              with SunChem India – your trusted partner for over 25 years in
+              cosmetic formulations.
             </p>
             <p className="font-semibold">Let’s start your brand’s journey!</p>
             <div className="flex gap-4">

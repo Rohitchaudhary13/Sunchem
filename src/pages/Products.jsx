@@ -1,17 +1,18 @@
 import React from "react";
 import { productCatalog } from "../assets/productCatalog";
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import { motion } from 'framer-motion';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 import { Link, ScrollRestoration, useParams } from "react-router-dom";
+import ProductChat from "../components/ProductChat";
 
 const Products = () => {
   const { id } = useParams();
-  const product = productCatalog.find(item => item.id === parseInt(id, 10));
+  const product = productCatalog.find((item) => item.id === parseInt(id, 10));
   if (!product) {
     return <div>Product not found</div>;
   }
-  console.log(product)
+  console.log(product);
 
   return (
     <div>
@@ -36,11 +37,14 @@ const Products = () => {
           <span className="italic">exclusive products</span>
         </motion.h2> */}
       </div>
-      <div className='fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2'>
-    <Link to="contact">
-    <button className='px-6 py-4 bg-primary text-dark w-72 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out'>Contact Us</button>
-    </Link>
-    </div>
+      {/* <div className="fixed bottom-8 left-1/2 z-50 transform -translate-x-1/2 -translate-y-1/2">
+        <Link to="contact">
+          <button className="px-6 py-4 bg-primary text-dark w-72 hover:bg-dark hover:text-primary transition-all duration-300 ease-in-out">
+            Contact Us
+          </button>
+        </Link>
+      </div> */}
+      <ProductChat />
       <div className="w-11/12 mx-auto relative pb-8 md:pb-16">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl py-8 md:py-16">
           <span className="italic">{product.category}</span>
